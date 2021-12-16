@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div className='searchBar'>
             <div className='searchIconContainer'>
-                <img src={searchIcon} />
+                <img src={searchIcon} alt='search'/>
             </div>
             <input className='searchInput' placeholder='Collection, item, or user...'/>
         </div>
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <div className='headerActions'>
             <div className='themeSwitchContainer'>
-                <img src={themeSwitchIcon} />
+                <img src={themeSwitchIcon} alt='themeSwitch' />
             </div>
         </div>
         <div className='loginButton'>
