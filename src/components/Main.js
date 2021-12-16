@@ -1,8 +1,10 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import './Main.css';
 import instagramLogo from '../assets/owner/instagram.png';
 import twitterLogo from '../assets/owner/twitter.png';
 import moreIcon from '../assets/owner/more.png';
+import openseaLogo from '../assets/opensea.png';
 
 const Main = ({ selectedPunk, punkListData }) => {
     const [activePunk, setActivePunk] = useState(punkListData[0]);
@@ -33,8 +35,11 @@ const Main = ({ selectedPunk, punkListData }) => {
                                     {activePunk.owner.address}
                                 </div>
                                 <div className='ownerHandle'>
-                                    @cryptopunksclone
+                                    @cryptopunkclone
                                 </div>
+                                <a href={activePunk?.permalink} target="_blank">
+                                    <img className='openseaLink' src={openseaLogo} alt='Open Sea' />
+                                </a>
                             </div>
                             <div className='ownerLink'>
                                 <img src={instagramLogo} alt='Instagram Logo' />
